@@ -1,0 +1,14 @@
+[project]
+name = "RAGTest"
+version = "1.1.1"
+description = "Sample retrieval chain"
+authors = [{ name ="Akshay Udnur" }]
+dependencies = [
+    "uipath-langchain",
+    "cassio",
+    "astrapy",
+    "wikipedia",
+    "langchain_groq",
+    "arxiv"
+]
+requires-python = "==3.10"

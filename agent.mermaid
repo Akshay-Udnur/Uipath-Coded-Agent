@@ -1,0 +1,21 @@
+---
+config:
+  flowchart:
+    curve: linear
+---
+graph TD;
+	__start__([<p>__start__</p>]):::first
+	input(input)
+	wiki_search(wiki_search)
+	retrieve(retrieve)
+	llm_invoke(llm_invoke)
+	__end__([<p>__end__</p>]):::last
+	__start__ --> input;
+	input -.-> retrieve;
+	input -.-> wiki_search;
+	retrieve --> llm_invoke;
+	wiki_search --> llm_invoke;
+	llm_invoke --> __end__;
+	classDef default fill:#f2f0ff,line-height:1.2
+	classDef first fill-opacity:0
+	classDef last fill:#bfb6fc
